@@ -1,14 +1,15 @@
 #include "main.h"
 
-void frees_list(stack_t *head)
+void frees_list(stack_t **head, int unsigned counter)
 {
 	stack_t *val;
+	(void) counter;
 
-	val = head;
+	val = *head;
 
-	while (head)
+	while (val)
 	{
-		head = head->next;
+		*head = val->next;
 		free(val);
 	}
 }
