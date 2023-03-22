@@ -1,3 +1,4 @@
+#include "main.h"
 void p_all(stack_t **head, unsigned int counter)
 {
 	stack_t *h;

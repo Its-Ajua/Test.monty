@@ -1,3 +1,4 @@
+#include "main.h"
 void p_op(stack_t **head, int unsigned counter)
 {
 	stack_t *h;
