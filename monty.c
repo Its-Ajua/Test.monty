@@ -3,7 +3,7 @@
 int main(int argc, char *argv[])
 {
 	FILE *file;
-	size_t counter = 0;
+	int counter = 0;
 	ssize_t line = 1;
 	char *arr;
 
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	while (line > 0)
 	{
-		line = fget(&arr, &counter, file);
+		fgets(arr, counter, file);
 		free(arr);
 	}
 
